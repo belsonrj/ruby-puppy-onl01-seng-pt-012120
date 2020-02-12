@@ -54,11 +54,6 @@ describe "Dog" do
       maddy.save
       expect(Dog.class_variable_get(:@@all)).to match([pluto, maddy])
     end
-
-    it "gets called inside initialize when a new Dog is created" do
-        expect_any_instance_of(Dog).to receive(:save)
-        Dog.new('Luca')
-    end
   end
 
   describe "#name" do
