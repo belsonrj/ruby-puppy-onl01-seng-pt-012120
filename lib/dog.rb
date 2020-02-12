@@ -1,1 +1,6 @@
-# Add your code here
+class Puppy
+   @@all = []
+   
+   def initialize
+     
+     @@all << self
