@@ -7,4 +7,8 @@ class Puppy
      @name = name
      @@all << self
    end
+
+   def self
+     
+
 end
