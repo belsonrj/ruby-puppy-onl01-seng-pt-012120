@@ -5,10 +5,14 @@ class Puppy
    
    def initialize
      @name = name
-     @@all << self
    end
 
    def self.all
      @@all
    end
+   
+   def save
+     @@all << self
+   end
+   
 end
