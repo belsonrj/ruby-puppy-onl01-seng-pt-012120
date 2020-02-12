@@ -18,5 +18,11 @@ class Dog
   def self.clear_all
     @@all.clear
   end
+  
+  def self.create(name)
+    dog = self.new(name)
+    dog.save
+    return dog
+  end
 
 end
