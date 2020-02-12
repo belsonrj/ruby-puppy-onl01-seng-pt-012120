@@ -19,10 +19,8 @@ class Dog
     @@all.clear
   end
   
-  def self.create(name)
-    dog = self.new(name)
-    dog.save
-    return dog
+  def save
+    self.class.all << self
   end
   
   def self.print_all
